@@ -9,7 +9,7 @@ class Direccion(Model):
 
 
 class Usuario(Model):
-    id = None
+    id = "SEIRAL PRIMARY KEY"
     nombre = "VARCHAR(255)"
     email = "VARCHAR(255)"
     direccion_id = "INTEGER REFERENCES direccion(id)"
