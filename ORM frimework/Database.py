@@ -1,7 +1,8 @@
 import psycopg2
+from ConfigurationFolder.utils import *
 
 class Database:
-    def __init__(self, dbname, user, password, host="localhost", port=5432):
+    def __init__(self, dbname=config_database.DATA_BASE_NAME, user=config_database.USER, password=config_database.PASSWORD, host=config_database.HOST, port=config_database.PORT):
         """
         Inicializa una nueva instancia de la clase Database.
 

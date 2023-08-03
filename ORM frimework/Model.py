@@ -12,7 +12,7 @@ class Model:
         Retorna:
         Model: Una nueva instancia de la clase Model.
         """
-        self.db = Database(dbname="pureba001", user="postgres", password="root")
+        self.db = Database()
         
 
     def createTable(self):
