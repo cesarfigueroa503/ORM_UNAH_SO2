@@ -1,9 +1,9 @@
 from Model import Model
 
 class Direccion(Model):
-    id = None
-    ciudad = "VARCHAR(255)"
-    codigo_postal = "VARCHAR(10)"
+    id=0
+    ciudad=""
+    codigo_postal =""
 
     
 
@@ -20,15 +20,20 @@ class Usuario(Model):
 
 if __name__ == "__main__":
    
+    direccion = Direccion()
+    usuario = Usuario()
+
+    #Creacion de una nueva direccion
+    direccion.id = None
+    direccion.ciudad = "Choloma"
+    direccion.codigo_postal = "1200"
+
+    #Creacion de un nuevo Usuario
+
+    usuario.id = None
+    usuario.nombre = "Maria"
+    usuario.email = "maria@unah.hn"
     
-
-    nuevo_usuario = Usuario()
-    nuevo_usuario.id = 5
-    nuevo_usuario.nombre = "Kattherine"
-    nuevo_usuario.email = "kate@unah.hn"
-    nuevo_usuario.direccion_id=2
-
-    print(nuevo_usuario.getById(3))
     
 
     
