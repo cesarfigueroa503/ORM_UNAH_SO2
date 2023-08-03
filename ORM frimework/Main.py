@@ -21,5 +21,5 @@ if __name__ == "__main__":
     nuevo_usuario = Usuario()
     
 
-    nuevo_usuario.findAll()
+    print(nuevo_usuario.getById(1))
     
