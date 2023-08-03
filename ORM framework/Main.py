@@ -27,13 +27,17 @@ if __name__ == "__main__":
     direccion.id = None
     direccion.ciudad = "Choloma"
     direccion.codigo_postal = "1200"
+    
+    direccion.save()
+    #direccion.update()
 
     #Creacion de un nuevo Usuario
 
     usuario.id = None
     usuario.nombre = "Maria"
     usuario.email = "maria@unah.hn"
-    
+    usuario.direccion_id = 2
+
     
 
     
